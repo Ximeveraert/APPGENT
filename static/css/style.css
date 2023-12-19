@@ -1,0 +1,41 @@
+.gentsefeestenlogo{
+    background-color: black;
+    width: 250px;
+    padding-top: 35px;
+    padding-left: 25px;
+    
+}
+
+header{
+    background-color: black;
+    height: 180px;
+}
+
+main{
+    background-color: rgba(231,208,184,255);
+    padding-bottom: 1000px;
+}
+
+.Backgroundlettermain{
+    width: 70vw;
+
+}
+
+.toplinks{
+   text-align: center;
+    padding: 0;
+    width: 90%;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.mainbackgroundimg{
+    width: 65vw;
+}
+
+.headercontainer{
+    width: 90%;
+    max-width: auto;
+    margin: 0 auto;
+    
+}
