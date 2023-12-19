@@ -9,6 +9,7 @@
 header{
     background-color: black;
     height: 180px;
+    display: flex;
 }
 
 main{
@@ -21,21 +22,20 @@ main{
 
 }
 
-.toplinks{
-   text-align: center;
-    padding: 0;
-    width: 90%;
-    max-width: 100px;
-    margin: 0 auto;
+.topleft{
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.topright{
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
 }
 
 .mainbackgroundimg{
     width: 65vw;
-}
-
-.headercontainer{
-    width: 90%;
-    max-width: auto;
-    margin: 0 auto;
-    
 }
