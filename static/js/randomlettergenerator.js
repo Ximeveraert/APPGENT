@@ -25,7 +25,7 @@ function generateRandomNumber(min, max) {
 const randomResult = generateRandomNumber(0, 5);
 
 const numberChosen = randomResult
-
+console.log(numberChosen)
 let chosenImgTop = imageArrayTop[numberChosen];
 
 let chosenImgTopElement = document.getElementById("gentsefeestenlogo");
