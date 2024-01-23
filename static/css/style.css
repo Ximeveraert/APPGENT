@@ -53,6 +53,17 @@ main {
     ". day9 day10";
 }
 
+@media screen and (max-width: 47.5rem) {
+  .grid-container {
+    grid-template-areas:
+      "day1 day2 day3 day4 day5"
+      "day6 day7 day8 day9 day10";
+    padding: 0;
+  }
+  .griditem {
+    width: 8.5rem !important;
+  }
+}
 .griditem {
   display: flex;
   align-items: center;
@@ -98,23 +109,86 @@ main {
   display: flex;
 }
 
+.events {
+  overflow-x: scroll;
+}
+
+.events div {
+}
+
 .nieuws {
   display: flex;
   width: 100vw;
   height: 50vw;
   background-color: black;
-}
-
-.nieuws li {
-  color: white;
-  list-style: none;
-  transform: rotate(-90deg);
-  font-size: 300%;
-  display: flex;
-  justify-content: left;
   align-items: center;
 }
 
-.nieuwsgrid {
-  grid-area: ;
+.nieuws h3 {
+  color: white;
+  list-style: none;
+  transform: rotate(-90deg);
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 7rem;
+  background-color: #100000;
+  z-index: 1;
+  line-height: 1;
+  margin: 0;
+  height: fit-content;
+}
+.nieuws h3::after {
+  content: "";
+  background-color: red;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  display: contents;
+  bottom: 2rem;
+  left: 2rem;
+  display: block;
+}
+
+.nieuws .nieuwsgrid {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+  grid-template-areas:
+    "item1 item2"
+    "item3 item4";
+}
+
+.nieuwsgrid > div {
+  padding: 1rem;
+}
+.item1 {
+  grid-area: item1;
+  border: 1px solid white;
+}
+
+.item2 {
+  grid-area: item2;
+  border: 1px solid white;
+}
+/* grid colom item / item 4 zorgt er voor dat container in de grid */
+.item3 {
+  grid-area: item3;
+  grid-column: item3 / item4;
+  border: 1px solid white;
+}
+
+.nieuws .nieuwsgrid p {
+  color: white;
+  font-size: 1.5rem;
+}
+.nieuws .nieuwsgrid > div:hover {
+  background-color: red;
+}
+
+.nieuws .nieuwsgrid div:hover p {
+  color: black;
 }
