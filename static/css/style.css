@@ -109,11 +109,33 @@ main {
   display: flex;
 }
 
-.events {
-  overflow-x: scroll;
+.containerevents{
+  width: 100vw;
+  height: 25vw;
+  background: black
 }
 
+.events {
+  width: 40vw;
+  display: flex;
+  overflow-x: scroll !important;
+  padding-bottom: 2rem;
+  height: 25rem;
+  overflow-y: hidden;
+  position: absolute;
+  right: 125px;
+  bottom: -800px;
+  color: white;
+}
+
+.eventpicture{
+  width: 20rem;
+  height: 15rem;
+  object-fit: cover;
+}
 .events div {
+  margin: 0.5rem;
+  position: relative;
 }
 
 .nieuws {
